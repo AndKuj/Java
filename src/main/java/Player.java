@@ -1,13 +1,17 @@
 public class Player {
 
+    String name;
+    String clas;
+    int hp;
+    int atk =1;
 
-    public Player(String _name, String _clas,int _hp) {
-        name = _name;
-        clas=_clas;
-        hp=_hp;
+    public Player(final String name,final String clas,final int hp) {
+        this.name = name;
+        this.clas=clas;
+        this.hp=hp;
 
     }
-    void Player_details(){
+    void showPlayerDetails(){
 
         System.out.println(name);
         System.out.println(clas);
@@ -15,9 +19,6 @@ public class Player {
     }
     
 
-    String name;
-    String clas;
-    int hp;
-    int atk =1;
+
 }
 
